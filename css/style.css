@@ -1,0 +1,259 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+/* font-family: 'Permanent Marker', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700');
+/* font-family: 'Exo 2', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* 기본 Box Sizing 변경 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+/* 스타일 초기화(Reset CSS) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+  color:inherit;
+  text-decoration: none;
+
+
+}
+
+
+/* h1 탑바 */
+
+.header{
+  background: green;
+ 
+  width: 100%;
+  font-size:2em;
+  color:white;
+
+
+ position: sticky;
+ top: 0;
+ z-index:100;
+ 
+ 
+ text-align: center;
+padding:0.7%;
+font-family: 'Permanent Marker', cursive; 
+letter-spacing: 5px;
+}
+
+/* 코드 시작 */
+
+.container{
+  background: pink;
+display:flex;
+
+}
+
+.nav{
+align-content: flex-start;
+width:23%;
+
+}
+
+.nav-txt{
+  margin-top:10%;
+  font-size:2em;
+  text-transform: uppercase;
+  text-align: center;
+  /* margin-left: 1em; */
+  line-height: 2em;
+  font-family: 'Permanent Marker', cursive; 
+ 
+
+}
+.title-img{
+  
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* 포트폴리오 작업부분 */
+.content{ 
+background:yellow;
+  width:70%;
+  /* margin-left: 10%;
+  margin-bottom: 10%; */
+padding: 5%;
+margin-top:-6%;
+
+width:70%;
+/* width 가 지정되어야, align이 먹힘. */
+
+  
+
+}
+
+/* 포트폴리오 박스 */
+.portfolio a{
+  background: orange;
+  display: flex;
+  flex-direction: row-reverse;
+
+ width:100%;
+  height:auto;
+  margin-top:10%;
+  /* margin-left:10%; */
+
+
+  transition:  0.3s;
+ 
+}
+
+.portfolio a:hover{
+ 
+  transform:translate(0,-3px);
+  box-shadow: 0 6px 10px #cacace;
+ 
+}
+
+.portfolio article{
+  align-content: center;
+}
+
+/* 호버 예시
+a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+a.text-link:hover:after {
+  width: 100%;
+  z-index: 100; } */
+
+/* 포트폴리오 타이틀 */
+
+.brief{
+  background: #efefef;
+  width:60%;
+  height: auto;
+padding: 3em;
+
+}
+
+
+
+.brief h3, .brief h3 span{
+  
+  /* background: blue; */
+  color: rgba(61, 61, 61, 0.877);
+}
+
+
+.brief h3{
+  /* background: red; */
+  font-size: 250%;
+
+  /* ------font-size: 2em */
+  font-family: 'Exo 2', 'Noto Sans KR';
+  font-weight:700;
+
+}
+/* 포트폴리오 타이틀 부제 */
+.brief h3 span{
+  font-size: 100%;
+  font-family: 'Exo 2', 'Noto Sans KR';
+  font-weight:400;
+}
+/* 포트폴리오 한줄설명 */
+.small-title{
+  /* background: green; */
+
+  color: rgba(120,120,120,0.6);
+  font-size: 100%;
+  font-family: 'Exo 2', 'Noto Sans KR';
+  margin-top: 0.4em;
+  letter-spacing: 2px;
+
+}
+/* 포트폴리오 본문 */
+.body1{
+  margin-top: 1em;
+  font-size: 90%;
+  color: rgba(61, 61, 61, 0.877);
+  font-family: 'Exo 2', 'Noto Sans KR';
+  line-height:1.6em;
+}
+
+/* 포트폴리오 내 이미지 */
+.thumbnail{
+  width:40%;
+  height:auto;
+  background: blue;
+}
+.thumbnail img{
+  max-width: 100%;
+  height: auto;
+ align-content: flex-start;
+ /* 블록
+버티컬 얼라인 - 미들 탑 바텀 등으로 */
+/* 버티컬 아래의 디센더가 남아있기 때문에, 미들 또는 블럭으로 하면 없어짐.
+이미지 여러 개를 넣을 경우, 블럭은 지양할 것. 에러 남. */
+
+vertical-align: middle;
+
+/* display:block; */
+}
+
+
+/* favicons */
+/* <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> */
