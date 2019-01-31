@@ -84,7 +84,8 @@ letter-spacing: 5px;
 /* 코드 시작 */
 
 .container{
-  background: pink;
+  /* background: pink; */
+  background: #f5f5f5;
 display:flex;
 
 }
@@ -92,12 +93,15 @@ display:flex;
 .nav{
 align-content: flex-start;
 width:23%;
+font-size: 1.5em;
+padding:0px;
 
 }
 
+
 .nav-txt{
   margin-top:10%;
-  font-size:2em;
+  font-size:inherit;
   text-transform: uppercase;
   text-align: center;
   /* margin-left: 1em; */
@@ -106,6 +110,13 @@ width:23%;
  
 
 }
+
+.copyright{
+  margin-top: 10em;
+  font-size: 50%;
+  line-height: 100%;
+}
+
 .title-img{
   
   max-width: 100%;
@@ -115,7 +126,8 @@ width:23%;
 
 /* 포트폴리오 작업부분 */
 .content{ 
-background:yellow;
+/* background:yellow; */
+background: #f5f5f5;
 
   /* margin-left: 10%;
   margin-bottom: 10%; */
@@ -205,13 +217,13 @@ padding: 3em;
   color: rgba(120,120,120,0.6);
   font-size: 100%;
   font-family: 'Exo 2', 'Noto Sans KR';
-  margin-top: 0.4em;
+  margin-top: 5%;
   letter-spacing: 2px;
 
 }
 /* 포트폴리오 본문 */
 .body1{
-  margin-top: 1em;
+  margin-top: 0.2em;
   font-size: 90%;
   color: rgba(61, 61, 61, 0.877);
   font-family: 'Exo 2', 'Noto Sans KR';
@@ -220,12 +232,14 @@ padding: 3em;
 
 /* 포트폴리오 내 이미지 */
 .thumbnail{
+  /* max-height:100%;
+  width:auto; */
   width:40%;
   height:auto;
-  background: blue;
+  background: #efefef;
 }
 .thumbnail img{
-  max-width: 100%;
+  width: 100%;
   height: auto;
  align-content: flex-start;
  /* 블록
@@ -238,22 +252,3 @@ vertical-align: middle;
 /* display:block; */
 }
 
-
-/* favicons */
-/* <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff"> */
